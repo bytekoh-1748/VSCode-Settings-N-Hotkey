@@ -16,6 +16,14 @@
     "command": "editor.action.addSelectionToNextFindMatch"
   },
   {
+    "key": "cmd+d",
+    "command": "-editor.action.addSelectionToNextFindMatch"
+  },
+  {
+    "key": "cmd+d",
+    "command": "editor.debug.action.toggleBreakpoint"
+  },
+  {
     "key": "cmd+w",
     "command": "-workbench.action.closeActiveEditor"
   },

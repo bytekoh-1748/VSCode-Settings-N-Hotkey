@@ -47,6 +47,7 @@ Place these files in your project:
 
 | Key     | Action           |
 | ------- | ---------------- |
+| cmd + d | Toggle breakpoint |
 | cmd + 5 | Start / Continue |
 | cmd + 1 | Step Over        |
 | cmd + 2 | Step Into        |
@@ -134,6 +135,9 @@ Ends the debugging session.
   { "key": "cmd+e", "command": "-workbench.action.quickOpenPreviousEditor" },
   { "key": "cmd+e", "command": "editor.action.addSelectionToNextFindMatch" },
 
+  { "key": "cmd+d", "command": "-editor.action.addSelectionToNextFindMatch" },
+  { "key": "cmd+d", "command": "editor.debug.action.toggleBreakpoint" },
+
   { "key": "cmd+w", "command": "-workbench.action.closeActiveEditor" },
   { "key": "cmd+w", "command": "editor.action.revealDefinitionAside" },
 
@@ -203,6 +207,7 @@ Ends the debugging session.
 
 * `cmd + w` no longer closes tabs
 * `cmd + q` no longer quits the app
+* `cmd + d` no longer adds the next selection match
 * Some default shortcuts are overridden
 
 ---
@@ -212,8 +217,9 @@ Ends the debugging session.
 1. Use `cmd + 1` to navigate within a file
 2. Use `cmd + w` to inspect definitions without losing context
 3. Use `cmd + e` for quick multi-edit
-4. Start debugging with `cmd + 5`
-5. Control execution with number keys
+4. Use `cmd + d` to toggle breakpoints quickly
+5. Start debugging with `cmd + 5`
+6. Control execution with number keys
 
 ---
 
