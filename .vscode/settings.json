@@ -1,0 +1,32 @@
+{
+  "workbench.colorTheme": "Visual Studio Dark",
+  "git.autofetch": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "terminal.integrated.initialHint": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "editor.dragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromCodeNavigation": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.openSideBySideDirection": "right",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": true,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": true,
+  "terminal.integrated.hideOnStartup": "always"
+}
