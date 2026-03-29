@@ -54,7 +54,6 @@ Place these files in your project:
 | cmd + 3 | Step Out         |
 | cmd + 4 | Restart          |
 | cmd + 6 | Stop             |
-| cmd + ` | Continue         |
 
 ---
 
@@ -190,12 +189,6 @@ Ends the debugging session.
   {
     "key": "cmd+6",
     "command": "workbench.action.debug.stop",
-    "when": "inDebugMode"
-  },
-
-  {
-    "key": "cmd+`",
-    "command": "workbench.action.debug.continue",
     "when": "inDebugMode"
   }
 ]

@@ -94,10 +94,5 @@
     "key": "cmd+6",
     "command": "workbench.action.debug.stop",
     "when": "inDebugMode"
-  },
-  {
-    "key": "cmd+`",
-    "command": "workbench.action.debug.continue",
-    "when": "inDebugMode"
   }
 ]
