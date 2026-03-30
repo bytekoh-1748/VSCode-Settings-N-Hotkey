@@ -37,6 +37,14 @@ Place these files in your project:
 | cmd + 1 | Show symbols in current file     |
 | cmd + e | Add next occurrence to selection |
 
+### Search
+
+| Key     | Action          |
+| ------- | --------------- |
+| cmd + f | Open search     |
+| cmd + g | Next match      |
+| cmd + r | Previous match  |
+
 ### Focus
 
 | Key     | Action          |
@@ -149,6 +157,10 @@ Ends the debugging session.
   { "key": "cmd+e", "command": "-workbench.action.quickOpenPreviousEditor" },
   { "key": "cmd+e", "command": "editor.action.addSelectionToNextFindMatch" },
 
+  { "key": "cmd+f", "command": "actions.find", "when": "editorFocus" },
+  { "key": "cmd+g", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
+  { "key": "cmd+r", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
+
   { "key": "cmd+d", "command": "-editor.action.addSelectionToNextFindMatch" },
   { "key": "cmd+d", "command": "editor.debug.action.toggleBreakpoint" },
 
@@ -216,6 +228,7 @@ Ends the debugging session.
 * `cmd + w` no longer closes tabs
 * `cmd + q` no longer quits the app
 * `cmd + d` no longer adds the next selection match
+* Search navigation uses `cmd + g` for next and `cmd + r` for previous
 * Zen Mode hides tabs
 * The custom title bar is hidden in full screen
 * Editor rulers are disabled globally and for Dart, C, C++, and Python files
@@ -227,10 +240,11 @@ Ends the debugging session.
 
 1. Use `cmd + 1` to navigate within a file
 2. Use `cmd + w` to inspect definitions without losing context
-3. Use `cmd + e` for quick multi-edit
-4. Use `cmd + d` to toggle breakpoints quickly
-5. Start debugging with `cmd + 5`
-6. Control execution with number keys
+3. Use `cmd + f`, `cmd + g`, and `cmd + r` to search and move between matches
+4. Use `cmd + e` for quick multi-edit
+5. Use `cmd + d` to toggle breakpoints quickly
+6. Start debugging with `cmd + 5`
+7. Control execution with number keys
 
 ---
 

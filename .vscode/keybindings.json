@@ -16,6 +16,21 @@
     "command": "editor.action.addSelectionToNextFindMatch"
   },
   {
+    "key": "cmd+f",
+    "command": "actions.find",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+g",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
     "key": "cmd+d",
     "command": "-editor.action.addSelectionToNextFindMatch"
   },
