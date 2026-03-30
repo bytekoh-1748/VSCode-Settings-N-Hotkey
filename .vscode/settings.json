@@ -17,16 +17,19 @@
     "*.md": "vscode.markdown.preview.editor"
   },
   "editor.dragAndDrop": false,
+  "editor.rulers": [],
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromCodeNavigation": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.openSideBySideDirection": "right",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
-  "zenMode.hideTabs": false,
   "zenMode.hideStatusBar": true,
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
   "zenMode.centerLayout": true,
-  "terminal.integrated.hideOnStartup": "always"
+  "terminal.integrated.hideOnStartup": "always",
+  "[dart]": {
+    "editor.rulers": []
+  }
 }

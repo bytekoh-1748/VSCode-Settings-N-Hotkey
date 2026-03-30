@@ -103,6 +103,7 @@ Ends the debugging session.
   },
 
   "editor.dragAndDrop": false,
+  "editor.rulers": [],
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromCodeNavigation": false,
@@ -111,14 +112,17 @@ Ends the debugging session.
 
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
-  "zenMode.hideTabs": false,
   "zenMode.hideStatusBar": true,
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
   "zenMode.centerLayout": true,
 
-  "terminal.integrated.hideOnStartup": "always"
+  "terminal.integrated.hideOnStartup": "always",
+
+  "[dart]": {
+    "editor.rulers": []
+  }
 }
 ```
 
@@ -201,6 +205,7 @@ Ends the debugging session.
 * `cmd + w` no longer closes tabs
 * `cmd + q` no longer quits the app
 * `cmd + d` no longer adds the next selection match
+* Editor rulers are disabled globally and for Dart files
 * Some default shortcuts are overridden
 
 ---
