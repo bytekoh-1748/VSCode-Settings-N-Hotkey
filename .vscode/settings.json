@@ -23,13 +23,24 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.openSideBySideDirection": "right",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "window.customTitleBarVisibility": "windowed",
   "zenMode.hideStatusBar": true,
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
   "zenMode.centerLayout": true,
+  "zenMode.showTabs": "none",
   "terminal.integrated.hideOnStartup": "always",
   "[dart]": {
+    "editor.rulers": []
+  },
+  "[c]": {
+    "editor.rulers": []
+  },
+  "[cpp]": {
+    "editor.rulers": []
+  },
+  "[python]": {
     "editor.rulers": []
   }
 }

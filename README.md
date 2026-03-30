@@ -111,16 +111,27 @@ Ends the debugging session.
   "workbench.editor.openSideBySideDirection": "right",
 
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "window.customTitleBarVisibility": "windowed",
 
   "zenMode.hideStatusBar": true,
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
   "zenMode.centerLayout": true,
+  "zenMode.showTabs": "none",
 
   "terminal.integrated.hideOnStartup": "always",
 
   "[dart]": {
+    "editor.rulers": []
+  },
+  "[c]": {
+    "editor.rulers": []
+  },
+  "[cpp]": {
+    "editor.rulers": []
+  },
+  "[python]": {
     "editor.rulers": []
   }
 }
@@ -205,7 +216,9 @@ Ends the debugging session.
 * `cmd + w` no longer closes tabs
 * `cmd + q` no longer quits the app
 * `cmd + d` no longer adds the next selection match
-* Editor rulers are disabled globally and for Dart files
+* Zen Mode hides tabs
+* The custom title bar is hidden in full screen
+* Editor rulers are disabled globally and for Dart, C, C++, and Python files
 * Some default shortcuts are overridden
 
 ---
