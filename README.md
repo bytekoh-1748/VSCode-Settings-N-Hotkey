@@ -12,7 +12,8 @@ Place these files in your project:
 ```text
 .vscode/
  ├── settings.json
- └── keybindings.json
+ ├── keybindings_mac.json
+ └── keybindings_windows.json
 ```
 
 ---
@@ -33,35 +34,35 @@ Place these files in your project:
 
 | Key     | Action                           |
 | ------- | -------------------------------- |
-| cmd + w | Open definition to the side      |
-| cmd + 1 | Show symbols in current file     |
-| cmd + e | Add next occurrence to selection |
+| cmd (ctrl) + w | Open definition to the side      |
+| cmd (ctrl) + 1 | Show symbols in current file     |
+| cmd (ctrl) + e | Add next occurrence to selection |
 
 ### Search
 
 | Key     | Action          |
 | ------- | --------------- |
-| cmd + f | Open search     |
-| cmd + g | Next match      |
-| cmd + r | Previous match  |
+| cmd (ctrl) + f | Open search     |
+| cmd (ctrl) + g | Next match      |
+| cmd (ctrl) + r | Previous match  |
 
 ### Focus
 
 | Key     | Action          |
 | ------- | --------------- |
-| cmd + q | Toggle Zen Mode |
+| cmd (ctrl) + q | Toggle Zen Mode |
 
 ### Debugging
 
 | Key     | Action           |
 | ------- | ---------------- |
-| cmd + d | Toggle breakpoint |
-| cmd + 5 | Start / Continue |
-| cmd + 1 | Step Over        |
-| cmd + 2 | Step Into        |
-| cmd + 3 | Step Out         |
-| cmd + 4 | Restart          |
-| cmd + 6 | Stop             |
+| cmd (ctrl) + d | Toggle breakpoint |
+| cmd (ctrl) + 5 | Start / Continue |
+| cmd (ctrl) + 1 | Step Over        |
+| cmd (ctrl) + 2 | Step Into        |
+| cmd (ctrl) + 3 | Step Out         |
+| cmd (ctrl) + 4 | Restart          |
+| cmd (ctrl) + 6 | Stop             |
 
 ---
 
@@ -147,88 +148,21 @@ Ends the debugging session.
 
 ---
 
-## keybindings.json
+## Keybindings files
 
-```json
-[
-  { "key": "cmd+q", "command": "-workbench.action.quit" },
-  { "key": "cmd+q", "command": "workbench.action.toggleZenMode" },
+Use the platform-specific file below and copy its contents into your VS Code user `keybindings.json`.
 
-  { "key": "cmd+e", "command": "-workbench.action.quickOpenPreviousEditor" },
-  { "key": "cmd+e", "command": "editor.action.addSelectionToNextFindMatch" },
-
-  { "key": "cmd+f", "command": "actions.find", "when": "editorFocus" },
-  { "key": "cmd+g", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
-  { "key": "cmd+r", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
-
-  { "key": "cmd+d", "command": "-editor.action.addSelectionToNextFindMatch" },
-  { "key": "cmd+d", "command": "editor.debug.action.toggleBreakpoint" },
-
-  { "key": "cmd+w", "command": "-workbench.action.closeActiveEditor" },
-  { "key": "cmd+w", "command": "editor.action.revealDefinitionAside" },
-
-  { "key": "cmd+1", "command": "-workbench.action.focusFirstEditorGroup" },
-  {
-    "key": "cmd+1",
-    "command": "workbench.action.debug.stepOver",
-    "when": "inDebugMode && debugState == 'stopped'"
-  },
-  {
-    "key": "cmd+1",
-    "command": "workbench.action.gotoSymbol",
-    "when": "!inDebugMode"
-  },
-
-  { "key": "cmd+2", "command": "-workbench.action.focusSecondEditorGroup" },
-  {
-    "key": "cmd+2",
-    "command": "workbench.action.debug.stepInto",
-    "when": "inDebugMode && debugState == 'stopped'"
-  },
-
-  { "key": "cmd+3", "command": "-workbench.action.focusThirdEditorGroup" },
-  {
-    "key": "cmd+3",
-    "command": "workbench.action.debug.stepOut",
-    "when": "inDebugMode && debugState == 'stopped'"
-  },
-
-  { "key": "cmd+4", "command": "-workbench.action.focusFourthEditorGroup" },
-  {
-    "key": "cmd+4",
-    "command": "workbench.action.debug.restart",
-    "when": "inDebugMode"
-  },
-
-  { "key": "cmd+5", "command": "-workbench.action.focusFifthEditorGroup" },
-  {
-    "key": "cmd+5",
-    "command": "workbench.action.debug.continue",
-    "when": "inDebugMode"
-  },
-  {
-    "key": "cmd+5",
-    "command": "workbench.action.debug.start",
-    "when": "!inDebugMode"
-  },
-
-  { "key": "cmd+6", "command": "-workbench.action.focusSixthEditorGroup" },
-  {
-    "key": "cmd+6",
-    "command": "workbench.action.debug.stop",
-    "when": "inDebugMode"
-  }
-]
-```
+* macOS: `.vscode/keybindings_mac.json`
+* Windows: `.vscode/keybindings_windows.json`
 
 ---
 
 ## Notes
 
-* `cmd + w` no longer closes tabs
-* `cmd + q` no longer quits the app
-* `cmd + d` no longer adds the next selection match
-* Search navigation uses `cmd + g` for next and `cmd + r` for previous
+* `cmd (ctrl) + w` no longer closes tabs
+* `cmd (ctrl) + q` no longer quits the app
+* `cmd (ctrl) + d` no longer adds the next selection match
+* Search navigation uses `cmd (ctrl) + g` for next and `cmd (ctrl) + r` for previous
 * Zen Mode hides tabs
 * The custom title bar is hidden in full screen
 * Editor rulers are disabled globally and for Dart, C, C++, and Python files
@@ -238,12 +172,12 @@ Ends the debugging session.
 
 ## Typical usage
 
-1. Use `cmd + 1` to navigate within a file
-2. Use `cmd + w` to inspect definitions without losing context
-3. Use `cmd + f`, `cmd + g`, and `cmd + r` to search and move between matches
-4. Use `cmd + e` for quick multi-edit
-5. Use `cmd + d` to toggle breakpoints quickly
-6. Start debugging with `cmd + 5`
+1. Use `cmd (ctrl) + 1` to navigate within a file
+2. Use `cmd (ctrl) + w` to inspect definitions without losing context
+3. Use `cmd (ctrl) + f`, `cmd (ctrl) + g`, and `cmd (ctrl) + r` to search and move between matches
+4. Use `cmd (ctrl) + e` for quick multi-edit
+5. Use `cmd (ctrl) + d` to toggle breakpoints quickly
+6. Start debugging with `cmd (ctrl) + 5`
 7. Control execution with number keys
 
 ---
