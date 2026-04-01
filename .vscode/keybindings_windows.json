@@ -47,6 +47,11 @@
     "command": "editor.action.revealDefinitionAside"
   },
   {
+    "key": "ctrl+`",
+    "command": "workbench.action.closeGroup",
+    "when": "multipleEditorGroups"
+  },
+  {
     "key": "ctrl+1",
     "command": "-workbench.action.focusFirstEditorGroup"
   },

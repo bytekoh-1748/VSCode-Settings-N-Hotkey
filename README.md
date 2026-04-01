@@ -35,6 +35,7 @@ Place these files in your project:
 | Key     | Action                           |
 | ------- | -------------------------------- |
 | cmd (ctrl) + w | Open definition to the side      |
+| cmd (ctrl) + ` | Close current split editor group |
 | cmd (ctrl) + 1 | Show symbols in current file     |
 | cmd (ctrl) + e | Add next occurrence to selection |
 
@@ -160,6 +161,7 @@ Use the platform-specific file below and copy its contents into your VS Code use
 ## Notes
 
 * `cmd (ctrl) + w` no longer closes tabs
+* `cmd (ctrl) + `` closes the active split editor group
 * `cmd (ctrl) + q` no longer quits the app
 * `cmd (ctrl) + d` no longer adds the next selection match
 * Search navigation uses `cmd (ctrl) + g` for next and `cmd (ctrl) + r` for previous
