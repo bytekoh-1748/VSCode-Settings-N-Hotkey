@@ -1,0 +1,349 @@
+<svg width="1600" height="960" viewBox="0 0 1600 960" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">VS Code keyboard layout shortcut map</title>
+  <desc id="desc">A keyboard-layout map showing the custom VS Code shortcuts directly on a Mac-style keyboard. Colors are grouped by category: focus, navigation, layout, search, editing, and debugging.</desc>
+  <defs>
+    <linearGradient id="bg" x1="100" y1="60" x2="1500" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF3FA"/>
+      <stop offset="1" stop-color="#E3EAF5"/>
+    </linearGradient>
+    <linearGradient id="shell" x1="94" y1="168" x2="1506" y2="852" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9D2DE"/>
+      <stop offset="0.22" stop-color="#E3E8F0"/>
+      <stop offset="1" stop-color="#B3BECE"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="130" y1="210" x2="1470" y2="818" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#263447"/>
+      <stop offset="1" stop-color="#162131"/>
+    </linearGradient>
+    <linearGradient id="plainKey" x1="0" y1="0" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBFCFE"/>
+      <stop offset="1" stop-color="#D7E0EA"/>
+    </linearGradient>
+    <linearGradient id="focusKey" x1="0" y1="0" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5C96B"/>
+      <stop offset="1" stop-color="#D79A2D"/>
+    </linearGradient>
+    <linearGradient id="navKey" x1="0" y1="0" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#63B8FF"/>
+      <stop offset="1" stop-color="#2C78EE"/>
+    </linearGradient>
+    <linearGradient id="layoutKey" x1="0" y1="0" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C7BFF"/>
+      <stop offset="1" stop-color="#5B4CE3"/>
+    </linearGradient>
+    <linearGradient id="searchKey" x1="0" y1="0" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45D4A6"/>
+      <stop offset="1" stop-color="#159F73"/>
+    </linearGradient>
+    <linearGradient id="editKey" x1="0" y1="0" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C58BFF"/>
+      <stop offset="1" stop-color="#8A4DE0"/>
+    </linearGradient>
+    <linearGradient id="debugKey" x1="0" y1="0" x2="0" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8E8E"/>
+      <stop offset="1" stop-color="#D94B5E"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="960" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="20" flood-color="#152133" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      .title { font: 700 42px 'Segoe UI', Arial, sans-serif; fill: #152238; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #4E617F; }
+      .legendText { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #24344C; }
+      .plainCap { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #172131; text-anchor: middle; }
+      .accentCap { font: 700 17px 'Segoe UI', Arial, sans-serif; fill: #F8FBFF; text-anchor: middle; }
+      .accentMain { font: 700 14px 'Segoe UI', Arial, sans-serif; fill: #F8FBFF; text-anchor: middle; }
+      .accentSub { font: 500 12px 'Segoe UI', Arial, sans-serif; fill: #E4F0FF; text-anchor: middle; }
+      .modifierMain { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #F8FBFF; text-anchor: middle; }
+      .modifierSub { font: 600 12px 'Segoe UI', Arial, sans-serif; fill: #D7E2F5; text-anchor: middle; }
+      .footer { font: 600 15px 'Segoe UI', Arial, sans-serif; fill: #607089; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="960" rx="40" fill="url(#bg)"/>
+
+  <text class="title" x="126" y="110">VS Code Keyboard Map</text>
+  <text class="subtitle" x="126" y="145">Mac layout shown. Use Cmd on macOS and Ctrl on Windows. Categories share colors so the keyboard reads at a glance.</text>
+
+  <g>
+    <rect x="1098" y="82" width="362" height="88" rx="24" fill="#FFFFFF" stroke="#CBD5E2"/>
+    <circle cx="1132" cy="110" r="10" fill="url(#focusKey)"/>
+    <text class="legendText" x="1152" y="116">Focus</text>
+    <circle cx="1242" cy="110" r="10" fill="url(#navKey)"/>
+    <text class="legendText" x="1262" y="116">Navigation</text>
+    <circle cx="1386" cy="110" r="10" fill="url(#layoutKey)"/>
+    <text class="legendText" x="1406" y="116">Layout</text>
+    <circle cx="1132" cy="142" r="10" fill="url(#searchKey)"/>
+    <text class="legendText" x="1152" y="148">Search</text>
+    <circle cx="1242" cy="142" r="10" fill="url(#editKey)"/>
+    <text class="legendText" x="1262" y="148">Edit</text>
+    <circle cx="1386" cy="142" r="10" fill="url(#debugKey)"/>
+    <text class="legendText" x="1406" y="148">Debug</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="182" width="1416" height="680" rx="52" fill="url(#shell)"/>
+    <rect x="132" y="222" width="1336" height="600" rx="42" fill="url(#deck)"/>
+  </g>
+
+  <!-- Number row -->
+  <g transform="translate(170 266)">
+    <g transform="translate(0 0)">
+      <rect width="84" height="84" rx="18" fill="url(#debugKey)"/>
+      <text class="accentCap" x="42" y="23">1</text>
+      <text class="accentMain" x="42" y="48">Symbols</text>
+      <text class="accentSub" x="42" y="66">Step Over</text>
+    </g>
+    <g transform="translate(96 0)">
+      <rect width="84" height="84" rx="18" fill="url(#debugKey)"/>
+      <text class="accentCap" x="42" y="23">2</text>
+      <text class="accentMain" x="42" y="48">Step Into</text>
+      <text class="accentSub" x="42" y="66">debug</text>
+    </g>
+    <g transform="translate(192 0)">
+      <rect width="84" height="84" rx="18" fill="url(#debugKey)"/>
+      <text class="accentCap" x="42" y="23">3</text>
+      <text class="accentMain" x="42" y="48">Step Out</text>
+      <text class="accentSub" x="42" y="66">debug</text>
+    </g>
+    <g transform="translate(288 0)">
+      <rect width="84" height="84" rx="18" fill="url(#debugKey)"/>
+      <text class="accentCap" x="42" y="23">4</text>
+      <text class="accentMain" x="42" y="48">Restart</text>
+      <text class="accentSub" x="42" y="66">debug</text>
+    </g>
+    <g transform="translate(384 0)">
+      <rect width="84" height="84" rx="18" fill="url(#debugKey)"/>
+      <text class="accentCap" x="42" y="23">5</text>
+      <text class="accentMain" x="42" y="48">Start</text>
+      <text class="accentSub" x="42" y="66">Continue</text>
+    </g>
+    <g transform="translate(480 0)">
+      <rect width="84" height="84" rx="18" fill="url(#debugKey)"/>
+      <text class="accentCap" x="42" y="23">6</text>
+      <text class="accentMain" x="42" y="48">Stop</text>
+      <text class="accentSub" x="42" y="66">debug</text>
+    </g>
+    <g transform="translate(576 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">7</text>
+    </g>
+    <g transform="translate(672 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">8</text>
+    </g>
+    <g transform="translate(768 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">9</text>
+    </g>
+    <g transform="translate(864 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">0</text>
+    </g>
+    <g transform="translate(960 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">-</text>
+    </g>
+    <g transform="translate(1056 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">=</text>
+    </g>
+  </g>
+
+  <!-- QWERTY row -->
+  <g transform="translate(194 374)">
+    <g transform="translate(0 0)">
+      <rect width="84" height="84" rx="18" fill="url(#focusKey)"/>
+      <text class="accentCap" x="42" y="23">Q</text>
+      <text class="accentMain" x="42" y="48">Zen Mode</text>
+      <text class="accentSub" x="42" y="66">focus</text>
+    </g>
+    <g transform="translate(96 0)">
+      <rect width="84" height="84" rx="18" fill="url(#navKey)"/>
+      <text class="accentCap" x="42" y="23">W</text>
+      <text class="accentMain" x="42" y="48">Definition</text>
+      <text class="accentSub" x="42" y="66">aside</text>
+    </g>
+    <g transform="translate(192 0)">
+      <rect width="84" height="84" rx="18" fill="url(#layoutKey)"/>
+      <text class="accentCap" x="42" y="23">E</text>
+      <text class="accentMain" x="42" y="48">Maximize</text>
+      <text class="accentSub" x="42" y="66">group</text>
+    </g>
+    <g transform="translate(288 0)">
+      <rect width="84" height="84" rx="18" fill="url(#layoutKey)"/>
+      <text class="accentCap" x="42" y="23">R</text>
+      <text class="accentMain" x="42" y="48">Close</text>
+      <text class="accentSub" x="42" y="66">group</text>
+    </g>
+    <g transform="translate(384 0)">
+      <rect width="84" height="84" rx="18" fill="url(#searchKey)"/>
+      <text class="accentCap" x="42" y="23">T</text>
+      <text class="accentMain" x="42" y="48">Previous</text>
+      <text class="accentSub" x="42" y="66">match</text>
+    </g>
+    <g transform="translate(480 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">Y</text>
+    </g>
+    <g transform="translate(576 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">U</text>
+    </g>
+    <g transform="translate(672 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">I</text>
+    </g>
+    <g transform="translate(768 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">O</text>
+    </g>
+    <g transform="translate(864 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">P</text>
+    </g>
+    <g transform="translate(960 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">[</text>
+    </g>
+    <g transform="translate(1056 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">]</text>
+    </g>
+  </g>
+
+  <!-- ASDF row -->
+  <g transform="translate(232 480)">
+    <g transform="translate(0 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">A</text>
+    </g>
+    <g transform="translate(96 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">S</text>
+    </g>
+    <g transform="translate(192 0)">
+      <rect width="84" height="84" rx="18" fill="url(#debugKey)"/>
+      <text class="accentCap" x="42" y="23">D</text>
+      <text class="accentMain" x="42" y="48">Toggle</text>
+      <text class="accentSub" x="42" y="66">breakpoint</text>
+    </g>
+    <g transform="translate(288 0)">
+      <rect width="84" height="84" rx="18" fill="url(#searchKey)"/>
+      <text class="accentCap" x="42" y="23">F</text>
+      <text class="accentMain" x="42" y="48">Find</text>
+      <text class="accentSub" x="42" y="66">search</text>
+    </g>
+    <g transform="translate(384 0)">
+      <rect width="84" height="84" rx="18" fill="url(#searchKey)"/>
+      <text class="accentCap" x="42" y="23">G</text>
+      <text class="accentMain" x="42" y="48">Next</text>
+      <text class="accentSub" x="42" y="66">match</text>
+    </g>
+    <g transform="translate(480 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">H</text>
+    </g>
+    <g transform="translate(576 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">J</text>
+    </g>
+    <g transform="translate(672 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">K</text>
+    </g>
+    <g transform="translate(768 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">L</text>
+    </g>
+    <g transform="translate(864 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">;</text>
+    </g>
+    <g transform="translate(960 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">'</text>
+    </g>
+  </g>
+
+  <!-- ZXCV row -->
+  <g transform="translate(278 586)">
+    <g transform="translate(0 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">Z</text>
+    </g>
+    <g transform="translate(96 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">X</text>
+    </g>
+    <g transform="translate(192 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">C</text>
+    </g>
+    <g transform="translate(288 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">V</text>
+    </g>
+    <g transform="translate(384 0)">
+      <rect width="84" height="84" rx="18" fill="url(#editKey)"/>
+      <text class="accentCap" x="42" y="23">B</text>
+      <text class="accentMain" x="42" y="48">Add next</text>
+      <text class="accentSub" x="42" y="66">selection</text>
+    </g>
+    <g transform="translate(480 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">N</text>
+    </g>
+    <g transform="translate(576 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">M</text>
+    </g>
+    <g transform="translate(672 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">,</text>
+    </g>
+    <g transform="translate(768 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">.</text>
+    </g>
+    <g transform="translate(864 0)">
+      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="42" y="49">/</text>
+    </g>
+  </g>
+
+  <!-- Bottom row -->
+  <g transform="translate(170 702)">
+    <g transform="translate(0 0)">
+      <rect width="112" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="56" y="49">fn</text>
+    </g>
+    <g transform="translate(124 0)">
+      <rect width="112" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="56" y="49">ctrl</text>
+    </g>
+    <g transform="translate(248 0)">
+      <rect width="112" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="56" y="49">opt</text>
+    </g>
+    <g transform="translate(372 0)">
+      <rect width="152" height="84" rx="18" fill="#33445C"/>
+      <text class="modifierMain" x="76" y="40">Cmd</text>
+      <text class="modifierSub" x="76" y="61">Ctrl on Win</text>
+    </g>
+    <g transform="translate(536 0)">
+      <rect width="392" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="196" y="49">space</text>
+    </g>
+    <g transform="translate(940 0)">
+      <rect width="152" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="76" y="49">cmd</text>
+    </g>
+    <g transform="translate(1104 0)">
+      <rect width="112" height="84" rx="18" fill="url(#plainKey)"/>
+      <text class="plainCap" x="56" y="49">opt</text>
+    </g>
+  </g>
+
+  <text class="footer" x="126" y="906">Mapped keys use one color per category, and labels are center-aligned to match the physical keyboard layout.</text>
+</svg>

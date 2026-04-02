@@ -3,6 +3,8 @@
 This setup is designed for a keyboard-first workflow.
 The goal is to reduce context switching, avoid tab replacement, and make debugging fast and predictable.
 
+![VS Code keyboard layout map](assets/vscode-shortcut-map.svg)
+
 ---
 
 ## Files
@@ -10,6 +12,8 @@ The goal is to reduce context switching, avoid tab replacement, and make debuggi
 Place these files in your project:
 
 ```text
+assets/
+ └── vscode-shortcut-map.svg
 .vscode/
  ├── settings.json
  ├── keybindings_mac.json
@@ -35,9 +39,10 @@ Place these files in your project:
 | Key     | Action                           |
 | ------- | -------------------------------- |
 | cmd (ctrl) + w | Open definition to the side      |
-| cmd (ctrl) + ` | Close current split editor group |
+| cmd (ctrl) + r | Close current split editor group |
+| cmd (ctrl) + e | Maximize active editor group     |
 | cmd (ctrl) + 1 | Show symbols in current file     |
-| cmd (ctrl) + e | Add next occurrence to selection |
+| cmd (ctrl) + b | Add next occurrence to selection |
 
 ### Search
 
@@ -45,7 +50,7 @@ Place these files in your project:
 | ------- | --------------- |
 | cmd (ctrl) + f | Open search     |
 | cmd (ctrl) + g | Next match      |
-| cmd (ctrl) + r | Previous match  |
+| cmd (ctrl) + t | Previous match  |
 
 ### Focus
 
@@ -114,6 +119,12 @@ Ends the debugging session.
 
   "editor.dragAndDrop": false,
   "editor.rulers": [],
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveIndentation": true,
 
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromCodeNavigation": false,
@@ -161,10 +172,12 @@ Use the platform-specific file below and copy its contents into your VS Code use
 ## Notes
 
 * `cmd (ctrl) + w` no longer closes tabs
-* `cmd (ctrl) + `` closes the active split editor group
+* `cmd (ctrl) + r` closes the active split editor group
+* `cmd (ctrl) + e` maximizes the active editor group
 * `cmd (ctrl) + q` no longer quits the app
 * `cmd (ctrl) + d` no longer adds the next selection match
-* Search navigation uses `cmd (ctrl) + g` for next and `cmd (ctrl) + r` for previous
+* Search navigation uses `cmd (ctrl) + g` for next and `cmd (ctrl) + t` for previous
+* Bracket pair guides and indentation guides are enabled to make scope ranges clearer
 * Zen Mode hides tabs
 * The custom title bar is hidden in full screen
 * Editor rulers are disabled globally and for Dart, C, C++, and Python files
@@ -176,11 +189,12 @@ Use the platform-specific file below and copy its contents into your VS Code use
 
 1. Use `cmd (ctrl) + 1` to navigate within a file
 2. Use `cmd (ctrl) + w` to inspect definitions without losing context
-3. Use `cmd (ctrl) + f`, `cmd (ctrl) + g`, and `cmd (ctrl) + r` to search and move between matches
-4. Use `cmd (ctrl) + e` for quick multi-edit
-5. Use `cmd (ctrl) + d` to toggle breakpoints quickly
-6. Start debugging with `cmd (ctrl) + 5`
-7. Control execution with number keys
+3. Use `cmd (ctrl) + e` to maximize the active editor group
+4. Use `cmd (ctrl) + f`, `cmd (ctrl) + g`, and `cmd (ctrl) + t` to search and move between matches
+5. Use `cmd (ctrl) + b` for quick multi-edit
+6. Use `cmd (ctrl) + d` to toggle breakpoints quickly
+7. Start debugging with `cmd (ctrl) + 5`
+8. Control execution with number keys
 
 ---
 

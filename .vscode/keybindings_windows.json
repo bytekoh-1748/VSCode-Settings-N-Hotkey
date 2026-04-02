@@ -13,6 +13,14 @@
   },
   {
     "key": "ctrl+e",
+    "command": "workbench.action.minimizeOtherEditors"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
     "command": "editor.action.addSelectionToNextFindMatch"
   },
   {
@@ -21,12 +29,16 @@
     "when": "editorFocus"
   },
   {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
     "key": "ctrl+g",
     "command": "editor.action.nextMatchFindAction",
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+t",
     "command": "editor.action.previousMatchFindAction",
     "when": "editorFocus"
   },
@@ -47,8 +59,8 @@
     "command": "editor.action.revealDefinitionAside"
   },
   {
-    "key": "ctrl+`",
-    "command": "workbench.action.closeGroup",
+    "key": "ctrl+r",
+    "command": "workbench.action.closeEditorsInGroup",
     "when": "multipleEditorGroups"
   },
   {
