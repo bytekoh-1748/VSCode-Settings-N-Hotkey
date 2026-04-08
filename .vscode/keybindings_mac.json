@@ -39,8 +39,7 @@
   },
   {
     "key": "cmd+t",
-    "command": "editor.action.previousMatchFindAction",
-    "when": "editorFocus"
+    "command": "workbench.action.closeActiveEditor"
   },
   {
     "key": "cmd+d",

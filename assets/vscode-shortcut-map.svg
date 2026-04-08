@@ -177,10 +177,10 @@
       <text class="accentSub" x="42" y="66">group</text>
     </g>
     <g transform="translate(384 0)">
-      <rect width="84" height="84" rx="18" fill="url(#searchKey)"/>
+      <rect width="84" height="84" rx="18" fill="url(#layoutKey)"/>
       <text class="accentCap" x="42" y="23">T</text>
-      <text class="accentMain" x="42" y="48">Previous</text>
-      <text class="accentSub" x="42" y="66">match</text>
+      <text class="accentMain" x="42" y="48">Close</text>
+      <text class="accentSub" x="42" y="66">tab</text>
     </g>
     <g transform="translate(480 0)">
       <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
