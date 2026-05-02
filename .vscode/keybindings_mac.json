@@ -125,5 +125,22 @@
     "key": "cmd+6",
     "command": "workbench.action.debug.stop",
     "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-workbench.action.minimizeWindow"
+  },
+  {
+    "key": "cmd+m",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "cmd+i",
+    "command": "workbench.action.gotoSymbol"
   }
 ]

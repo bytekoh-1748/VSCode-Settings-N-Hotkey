@@ -1,5 +1,4 @@
 {
-  "workbench.colorTheme": "Visual Studio Dark",
   "git.autofetch": true,
   "liveServer.settings.donotVerifyTags": true,
   "editor.acceptSuggestionOnEnter": "off",
@@ -48,5 +47,9 @@
   },
   "[python]": {
     "editor.rulers": []
-  }
+  },
+  "git.enableSmartCommit": true,
+  "editor.tabMovesFocus": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.unicodeHighlight.invisibleCharacters": false
 }

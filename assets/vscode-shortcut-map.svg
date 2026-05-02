@@ -191,12 +191,16 @@
       <text class="plainCap" x="42" y="49">U</text>
     </g>
     <g transform="translate(672 0)">
-      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
-      <text class="plainCap" x="42" y="49">I</text>
+      <rect width="84" height="84" rx="18" fill="url(#navKey)"/>
+      <text class="accentCap" x="42" y="23">I</text>
+      <text class="accentMain" x="42" y="48">File</text>
+      <text class="accentSub" x="42" y="66">symbols @</text>
     </g>
     <g transform="translate(768 0)">
-      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
-      <text class="plainCap" x="42" y="49">O</text>
+      <rect width="84" height="84" rx="18" fill="url(#searchKey)"/>
+      <text class="accentCap" x="42" y="23">O</text>
+      <text class="accentMain" x="42" y="48">Workspace</text>
+      <text class="accentSub" x="42" y="66">symbols #</text>
     </g>
     <g transform="translate(864 0)">
       <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
@@ -295,8 +299,10 @@
       <text class="plainCap" x="42" y="49">N</text>
     </g>
     <g transform="translate(576 0)">
-      <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>
-      <text class="plainCap" x="42" y="49">M</text>
+      <rect width="84" height="84" rx="18" fill="url(#editKey)"/>
+      <text class="accentCap" x="42" y="23">M</text>
+      <text class="accentMain" x="42" y="48">Toggle</text>
+      <text class="accentSub" x="42" y="66">bookmark</text>
     </g>
     <g transform="translate(672 0)">
       <rect width="84" height="84" rx="18" fill="url(#plainKey)"/>

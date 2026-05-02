@@ -42,7 +42,10 @@ assets/
 | cmd (ctrl) + t | Close current editor tab         |
 | cmd (ctrl) + r | Close current split editor group |
 | cmd (ctrl) + e | Maximize active editor group     |
+| cmd (ctrl) + m | Toggle bookmark                  |
 | cmd (ctrl) + 1 | Show symbols in current file     |
+| cmd (ctrl) + i | Show symbols in current file (@) |
+| cmd (ctrl) + o | Show workspace symbols (#)      |
 | cmd (ctrl) + b | Add next occurrence to selection |
 
 ### Search
@@ -98,7 +101,6 @@ Ends the debugging session.
 
 ```json
 {
-  "workbench.colorTheme": "Visual Studio Dark",
   "git.autofetch": true,
   "liveServer.settings.donotVerifyTags": true,
   "editor.acceptSuggestionOnEnter": "off",
@@ -154,7 +156,11 @@ Ends the debugging session.
   },
   "[python]": {
     "editor.rulers": []
-  }
+  },
+  "git.enableSmartCommit": true,
+  "editor.tabMovesFocus": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.unicodeHighlight.invisibleCharacters": false
 }
 ```
 
@@ -178,6 +184,9 @@ Use the platform-specific file below and copy its contents into your VS Code use
 * `cmd (ctrl) + q` no longer quits the app
 * `cmd (ctrl) + d` no longer adds the next selection match
 * Search navigation uses `cmd (ctrl) + g` for next
+* `cmd (ctrl) + o` opens workspace symbol search with `#`
+* `cmd (ctrl) + i` opens current-file symbol search with `@`
+* `cmd (ctrl) + m` toggles bookmarks in the editor
 * Bracket pair guides and indentation guides are enabled to make scope ranges clearer
 * Zen Mode hides tabs
 * The custom title bar is hidden in full screen
@@ -188,14 +197,15 @@ Use the platform-specific file below and copy its contents into your VS Code use
 
 ## Typical usage
 
-1. Use `cmd (ctrl) + 1` to navigate within a file
-2. Use `cmd (ctrl) + w` to inspect definitions without losing context
-3. Use `cmd (ctrl) + e` to maximize the active editor group
-4. Use `cmd (ctrl) + f` and `cmd (ctrl) + g` to search and move between matches
-5. Use `cmd (ctrl) + b` for quick multi-edit
-6. Use `cmd (ctrl) + d` to toggle breakpoints quickly
-7. Start debugging with `cmd (ctrl) + 5`
-8. Control execution with number keys
+1. Use `cmd (ctrl) + i` or `cmd (ctrl) + 1` to navigate within a file
+2. Use `cmd (ctrl) + o` to jump across workspace symbols
+3. Use `cmd (ctrl) + w` to inspect definitions without losing context
+4. Use `cmd (ctrl) + e` to maximize the active editor group
+5. Use `cmd (ctrl) + f` and `cmd (ctrl) + g` to search and move between matches
+6. Use `cmd (ctrl) + b` for quick multi-edit
+7. Use `cmd (ctrl) + d` to toggle breakpoints quickly
+8. Start debugging with `cmd (ctrl) + 5`
+9. Control execution with number keys
 
 ---
 
